@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <form>
+                <h1>Bienvenido al Club Viejuners</h1>
+                <h3>Formulario de registro</h3>
+                    <label for="first name">Nombre</label><br>
+                    <input type="text" name="first name" id="first name">
+                    <br>
+                    <label for="surname">Apellidos</label><br>
+                    <input type="text" name="surname" id="surname">
+                    <br>
+                    <label for="age">Edad</label><br>
+                    <input type="number" name="age" id="age">
+                    <br>
+                <fieldset style="width: 10%;">
+                    <!-- fieldset viene por defecto al 100%, asi se puede reducir -->
+                    <legend>Sexo</legend>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Mujer</label><br>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Hombre</label><br>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Otro</label><br>
+                </fieldset>
+                <fieldset style="width: 10%;">
+                    <legend>¿Te sientes viejuner?</legend>
+                        <input type="checkbox" name="viejuner" id="yes" value="yes">
+                        <label for="yes">Si</label><br>
+                        <input type="checkbox" name="viejuner" id="no" value="no">
+                        <label for="no">No</label><br>
+                        <input type="checkbox" name="viejuner" id="don't know" value="don't know">
+                        <label for="don't know">Ns/Nc</label>
+                </fieldset><br>
+
+                <label for="description">¿Qué podrías decirnos de tí?</label><br>
+                <textarea
+                    name="description"
+                    id="description"
+                    style="width: 175px; height: 50px;"></textarea>
+                <h4>Datos de contacto:</h4>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" value="email"><br>
+                    <label for="phone">Telf.</label><br>
+                    <input type="tel" name="phone" id="phone" value="phone" placeholder="654-879-354">
+                    <br>
+                    <input type="submit" value="Enviar mis datos" style="border-radius: 5px; background-color: yellow;margin-left: 10px;">
+                    <br>
+        </form>
+        <form>
+                <h1>Los ladronzuelos de bicicletas</h1>
+                <h3>Formulario bicicletas robadas</h3>
+                    <label for="date">Fecha del robo</label><br>
+                    <input type="date" name="date" id="date">
+                    <br>
+                    <label for="time">Hora aproximada del robo</label><br>
+                    <input type="time" name="time" id="time">
+                    <br>
+                    <label for="color">Color de la bicicleta</label><br>
+                    <input type="color" name="color" id="color">
+                    <br>
+                    <label for="range">Precio bicicleta(entre 50 y 8000)</label>
+                    <input type="range" name="price" id="price" min="50" max="8000">
+                    <br>
+                    <label for="bike-type">Elegir el tipo de bicicleta:</label><br>
+                    <select id="bike-type" name="bike-type">
+                            <option value="" selected>Opciones</option>
+                        <optgroup label="paseo">
+                            <option value="señorial">Señorial</option>
+                            <option value="anti-plebeyos">Anti-plebeyos</option>
+                            <option value="porEncimaDelHombro">PorEncimaDelHombro</option>
+                        </optgroup>
+                        <optgroup label="montaña">
+                            <option value="gamusinos">Gamusinos</option>
+                            <option value="hueleflores Premium">HuelefloresPremium"</option>
+                            <option value="fango lover">Frango lover</option>
+                        </optgroup>
+                        <optgroup label="carreras">
+                            <option value="metroymedio">metroymedio</option>
+                            <option value="3 de la tarde.fluorescente edition">3 de la tarde.Fluorescente edition</option>
+                            <option value="grupitors">Grupitors</option>
+                        </optgroup>
+                    </select><br>
+                    <label for="accessories">Elegir accesorio:</label><br>
+                    <select id="accessories" name="accessories" multiple>
+                        <option value="small-weels">Ruedines</option> 
+                        <option value="stickers">Pegatinas</option>
+                        <option value="basket">Cesta</option>
+                        <option value="air-pump">Bomba de aire</option>
+                        <option value="bell">Timbre</option>
+                        <option value="headlight">Foco</option>
+                    </select><br>
+                    <label for="bike-brands">Elegir marca:</label><br>
+                    <input list="bike-brands">
+                    <datalist id="bike-brands">
+                        <option value="specialized"></option>
+                        <option value="trek"></option>
+                        <option value="merida"></option>
+                        <option value="scott"></option>
+                        <option value="giant"></option>
+                        <option value="cube"></option>
+                        <option value="lapierre"></option>
+                        <option value="orbea"></option>
+                        <option value="cannondale"></option>
+                        <option value="bmc"></option>
+                        <option value="canyon"></option>
+                        <option value="look"></option>
+                        <option value="protek"></option>
+                        <option value="megamo"></option>
+                        <option value="pinarello"></option>
+                        <option value="bianchi"></option>
+                        <option value="bh"></option>
+                        <option value="factor"></option>
+                        <option value="ghost"></option>
+                        <option value="cervélo"></option>
+                        <option value="argon"></option>
+                    </datalist>
+                    <br>
+                    <input type="submit" value="Enviar mis datos" style="border-radius: 5px; background-color: yellow;margin-left: 12px;">
+                    <input type="reset" value="Limpiar formulario" style="border-radius: 5px; background-color: ghostwhite;margin-left: 8px;">
+                    
+            </form>
+
+        </body>
+</html>
